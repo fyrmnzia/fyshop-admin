@@ -15,6 +15,11 @@ export function MainNav({ className }: React.HTMLAttributes<HTMLElement>) {
       active: pathname === `/${params.storeId}`,
     },
     {
+      href: `/${params.storeId}/banners`,
+      label: "Banner",
+      active: pathname === `/${params.storeId}/banners`,
+    },
+    {
       href: `/${params.storeId}/settings`,
       label: "Settings",
       active: pathname === `/${params.storeId}/settings`,
